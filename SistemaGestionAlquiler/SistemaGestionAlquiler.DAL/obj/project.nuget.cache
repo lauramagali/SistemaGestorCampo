@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OWL/A1D+i6uPZByuE2KU799EUG899y5iNj1ynfylcIF6fePlws4iv1LrYp1cnXwQKH+u8Nv3VNpfghMYLzqSEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.DAL\\SistemaGestionAlquiler.DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\magal\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\magal\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

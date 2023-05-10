@@ -1,5 +1,5 @@
 ﻿
-namespace SistemaGestionAlquiler
+namespace SistemaGestionAlquiler.GUI
 {
     partial class Form1
     {

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80E1AE84-C099-4021-8433-DF8680B8D367}</ProjectGuid>
+    <ProjectGuid>{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SistemaGestionAlquiler</RootNamespace>
-    <AssemblyName>SistemaGestionAlquiler</AssemblyName>
+    <RootNamespace>SistemaGestionAlquiler.GUI</RootNamespace>
+    <AssemblyName>SistemaGestionAlquiler.GUI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

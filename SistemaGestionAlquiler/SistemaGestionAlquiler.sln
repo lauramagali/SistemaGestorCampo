@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler", "SistemaGestionAlquiler\SistemaGestionAlquiler.csproj", "{80E1AE84-C099-4021-8433-DF8680B8D367}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.GUI", "SistemaGestionAlquiler.GUI\SistemaGestionAlquiler.GUI.csproj", "{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80E1AE84-C099-4021-8433-DF8680B8D367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80E1AE84-C099-4021-8433-DF8680B8D367}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80E1AE84-C099-4021-8433-DF8680B8D367}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80E1AE84-C099-4021-8433-DF8680B8D367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D4ACE489-A595-49FB-B945-33D0E33FB67F}
+		SolutionGuid = {298DEE80-170C-4EF7-BF23-4B3B5AC825B8}
 	EndGlobalSection
 EndGlobal

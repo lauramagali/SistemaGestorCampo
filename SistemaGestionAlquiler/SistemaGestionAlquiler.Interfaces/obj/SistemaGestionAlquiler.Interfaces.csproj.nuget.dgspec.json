@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.Interfaces.csproj": {}
+    "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.INTERFACES.csproj": {}
   },
   "projects": {
-    "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.Interfaces.csproj": {
+    "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.INTERFACES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.Interfaces.csproj",
-        "projectName": "SistemaGestionAlquiler.Interfaces",
-        "projectPath": "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.INTERFACES.csproj",
+        "projectName": "SistemaGestionAlquiler.INTERFACES",
+        "projectPath": "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\SistemaGestionAlquiler.INTERFACES.csproj",
         "packagesPath": "C:\\Users\\magal\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\magal\\OneDrive\\Documents\\UAI\\CAMPO 2023\\SISTEMA\\SistemaGestionAlquiler\\SistemaGestionAlquiler.Interfaces\\obj\\",
         "projectStyle": "PackageReference",

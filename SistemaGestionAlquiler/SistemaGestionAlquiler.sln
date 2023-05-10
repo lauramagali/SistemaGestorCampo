@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.GUI", "SistemaGestionAlquiler.GUI\SistemaGestionAlquiler.GUI.csproj", "{D2C6D21E-ADF8-4397-93A7-EC4C3024742A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.BE", "SistemaGestionAlquiler.BE\SistemaGestionAlquiler.BE.csproj", "{21FAE800-D6C4-4876-A29C-5C1D6F969148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionAlquiler.BE", "SistemaGestionAlquiler.BE\SistemaGestionAlquiler.BE.csproj", "{21FAE800-D6C4-4876-A29C-5C1D6F969148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.BLL", "SistemaGestionAlquiler.BLL\SistemaGestionAlquiler.BLL.csproj", "{55636C99-5DD8-495E-BAC3-073F23B998F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionAlquiler.BLL", "SistemaGestionAlquiler.BLL\SistemaGestionAlquiler.BLL.csproj", "{55636C99-5DD8-495E-BAC3-073F23B998F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.SERVICES", "SistemaGestionAlquiler.SERVICES\SistemaGestionAlquiler.SERVICES.csproj", "{C5FEF231-74A1-4991-9278-AFA25CDE0A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionAlquiler.SERVICES", "SistemaGestionAlquiler.SERVICES\SistemaGestionAlquiler.SERVICES.csproj", "{C5FEF231-74A1-4991-9278-AFA25CDE0A86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.DAL", "SistemaGestionAlquiler.DAL\SistemaGestionAlquiler.DAL.csproj", "{F6EF07F5-4CAC-48C2-9A62-A8F2138A7DEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionAlquiler.DAL", "SistemaGestionAlquiler.DAL\SistemaGestionAlquiler.DAL.csproj", "{F6EF07F5-4CAC-48C2-9A62-A8F2138A7DEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAlquiler.Interfaces", "SistemaGestionAlquiler.Interfaces\SistemaGestionAlquiler.Interfaces.csproj", "{970E897B-82EC-4788-9D3F-683C4D3ECFBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionAlquiler.INTERFACES", "SistemaGestionAlquiler.Interfaces\SistemaGestionAlquiler.INTERFACES.csproj", "{970E897B-82EC-4788-9D3F-683C4D3ECFBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

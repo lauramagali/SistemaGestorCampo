@@ -1,0 +1,9 @@
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\bin\Debug\BE.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\bin\Debug\BE.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\bin\Debug\SERVICIOS.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\bin\Debug\SERVICIOS.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\obj\Debug\BE.csproj.CopyComplete
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\obj\Debug\BE.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BE\obj\Debug\BE.pdb

@@ -1,0 +1,6 @@
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\SERVICIOS\bin\Debug\SERVICIOS.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\SERVICIOS\bin\Debug\SERVICIOS.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\SERVICIOS\obj\Debug\SERVICIOS.csproj.AssemblyReference.cache
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\SERVICIOS\obj\Debug\SERVICIOS.csproj.CoreCompileInputs.cache
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\SERVICIOS\obj\Debug\SERVICIOS.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\SERVICIOS\obj\Debug\SERVICIOS.pdb

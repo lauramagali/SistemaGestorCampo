@@ -1,0 +1,13 @@
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\BLL.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\BLL.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\BE.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\DAL.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\SERVICIOS.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\BE.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\DAL.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\bin\Debug\SERVICIOS.pdb
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\obj\Debug\BLL.dll
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\BLL\obj\Debug\BLL.pdb

@@ -41,11 +41,15 @@ namespace GUI
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblClave = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtclaverepetir = new System.Windows.Forms.TextBox();
             this.gbxUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxUsuario
             // 
+            this.gbxUsuario.Controls.Add(this.txtclaverepetir);
+            this.gbxUsuario.Controls.Add(this.label1);
             this.gbxUsuario.Controls.Add(this.lblError);
             this.gbxUsuario.Controls.Add(this.btnCancel);
             this.gbxUsuario.Controls.Add(this.btnRegistrar);
@@ -59,7 +63,7 @@ namespace GUI
             this.gbxUsuario.Controls.Add(this.lblUsername);
             this.gbxUsuario.Location = new System.Drawing.Point(38, 48);
             this.gbxUsuario.Name = "gbxUsuario";
-            this.gbxUsuario.Size = new System.Drawing.Size(563, 352);
+            this.gbxUsuario.Size = new System.Drawing.Size(563, 407);
             this.gbxUsuario.TabIndex = 0;
             this.gbxUsuario.TabStop = false;
             this.gbxUsuario.Tag = "user";
@@ -76,7 +80,7 @@ namespace GUI
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(188, 265);
+            this.btnCancel.Location = new System.Drawing.Point(188, 333);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(141, 37);
             this.btnCancel.TabIndex = 9;
@@ -87,7 +91,7 @@ namespace GUI
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(385, 265);
+            this.btnRegistrar.Location = new System.Drawing.Point(385, 333);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(141, 37);
             this.btnRegistrar.TabIndex = 8;
@@ -98,9 +102,9 @@ namespace GUI
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(189, 205);
+            this.txtClave.Location = new System.Drawing.Point(195, 205);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(337, 26);
+            this.txtClave.Size = new System.Drawing.Size(331, 26);
             this.txtClave.TabIndex = 7;
             // 
             // txtUsername
@@ -160,11 +164,27 @@ namespace GUI
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Nombre de Usuario:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 256);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Repetir Contraseña:";
+            // 
+            // txtclaverepetir
+            // 
+            this.txtclaverepetir.Location = new System.Drawing.Point(195, 253);
+            this.txtclaverepetir.Name = "txtclaverepetir";
+            this.txtclaverepetir.Size = new System.Drawing.Size(331, 26);
+            this.txtclaverepetir.TabIndex = 11;
+            // 
             // FrmRegistrarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 449);
+            this.ClientSize = new System.Drawing.Size(654, 486);
             this.Controls.Add(this.gbxUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmRegistrarUsuario";
@@ -190,5 +210,7 @@ namespace GUI
         private System.Windows.Forms.Label lblClave;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.TextBox txtclaverepetir;
+        private System.Windows.Forms.Label label1;
     }
 }

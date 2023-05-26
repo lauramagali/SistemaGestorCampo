@@ -41,15 +41,31 @@ namespace GUI
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SessionBLL.GetInstance().Logout();
-            if (FormAut.IsDisposed)
+            if (SESSION.IsLogged())
             {
-                FormAut = new FrmLogin();
+                DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea cerrar sesion?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    SessionBLL.GetInstance().Logout();
+                    if (FormAut.IsDisposed)
+                    {
+                        FormAut = new FrmLogin();
+                    }
+
+                    FormAut.MdiParent = this;
+                    FormAut.Show();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    MessageBox.Show("La sesión no se cerrará.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
+            else {
+                MessageBox.Show("No ha iniciado sesión.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            FormAut.MdiParent = this;
-            FormAut.Show();
-           
+
 
         }
 
@@ -65,28 +81,33 @@ namespace GUI
 
         private void crearModificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (SESSION.IsLogged())
-            {
-                FrmCrearModificarUsuario FormAutCrearMod = new FrmCrearModificarUsuario();
-                FormAutCrearMod.MdiParent = this;
-                FormAutCrearMod.Show();
-            }
+           // if (SESSION.IsLogged())
+            //{
+                FrmRegistrarUsuario FormAutCrearUsu = new FrmRegistrarUsuario();
+                FormAutCrearUsu.MdiParent = this;
+                FormAutCrearUsu.Show();
+            //}
 
         }
 
         private void desbloquearToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (SESSION.IsLogged())
-            {
+            //if (SESSION.IsLogged())
+            //{
                 FrmDesbloqueo FormAutDesBlo = new FrmDesbloqueo();
                 FormAutDesBlo.MdiParent = this;
                 FormAutDesBlo.Show();
-            }
+            //}
         }
 
         private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (SESSION.IsLogged()) {
 
+                FrmGestionarAlquileres FormAutGest = new FrmGestionarAlquileres();
+                FormAutGest.MdiParent = this;
+                FormAutGest.Show();
+            }
         }
     }
 }

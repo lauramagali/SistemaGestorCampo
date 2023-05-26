@@ -59,6 +59,7 @@ namespace BLL
 
             if (!string.IsNullOrWhiteSpace(taxPayerId))
             {
+                //Aplico encriptacion reversible al DNI/CUIT
                 string taxPayerIdEnc = cryptoManager.EncriptAES(taxPayerId);
                 var customer = customerDAL.FindByTaxPayerId(taxPayerIdEnc);
                 if (customer != null)

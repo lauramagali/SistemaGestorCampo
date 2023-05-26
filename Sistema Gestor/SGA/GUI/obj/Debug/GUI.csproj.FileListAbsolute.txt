@@ -25,4 +25,6 @@ C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmCargarReserva.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmRegistrarCliente.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmServicios.resources
-C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.GestionarAlquileres.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmGestionarAlquileres.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmPagos.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmPresupuesto.resources

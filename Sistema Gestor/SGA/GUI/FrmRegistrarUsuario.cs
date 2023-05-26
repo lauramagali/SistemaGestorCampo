@@ -31,24 +31,30 @@ namespace GUI
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            var usuario = new User(this.txtUsername.Text, this.txtClave.Text);
-            usuario.Phone ="";
-            usuario.Mail = "";
-            usuario.Name = txtName.Text;
-            usuario.Lastname = txtLastname.Text;
-
-            try
-            {
-                userBLL.Register(usuario);
-              
-                MessageBox.Show("Usuario dado de alta correctamente.", "Registrar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                this.Close();
+            if (txtClave.Text != txtclaverepetir.Text) {
+                this.lblError.Text = "Las contraseñas no coinciden.";
             }
-            catch (ValidationException ve)
-            {
-                this.lblError.Text = ve.Message;
+            else {
+                var usuario = new User(this.txtUsername.Text, this.txtClave.Text);
+                usuario.Phone = "";
+                usuario.Mail = "";
+                usuario.Name = txtName.Text;
+                usuario.Lastname = txtLastname.Text;
+
+                try
+                {
+                    userBLL.Register(usuario);
+
+                    MessageBox.Show("Usuario dado de alta correctamente.", "Registrar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Close();
+                }
+                catch (ValidationException ve)
+                {
+                    this.lblError.Text = ve.Message;
+                }
             }
+            
         }
     }
 }

@@ -64,6 +64,18 @@
     <Compile Include="FrmDesbloqueo.Designer.cs">
       <DependentUpon>FrmDesbloqueo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagos.Designer.cs">
+      <DependentUpon>FrmPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresupuesto.Designer.cs">
+      <DependentUpon>FrmPresupuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,11 +112,11 @@
     <Compile Include="FrmServicios.Designer.cs">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionarAlquileres.cs">
+    <Compile Include="FrmGestionarAlquileres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionarAlquileres.Designer.cs">
-      <DependentUpon>GestionarAlquileres.cs</DependentUpon>
+    <Compile Include="FrmGestionarAlquileres.Designer.cs">
+      <DependentUpon>FrmGestionarAlquileres.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDesbloqueo.resx">
       <DependentUpon>FrmDesbloqueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagos.resx">
+      <DependentUpon>FrmPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresupuesto.resx">
+      <DependentUpon>FrmPresupuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCliente.resx">
       <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
@@ -135,8 +153,8 @@
     <EmbeddedResource Include="FrmServicios.resx">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionarAlquileres.resx">
-      <DependentUpon>GestionarAlquileres.cs</DependentUpon>
+    <EmbeddedResource Include="FrmGestionarAlquileres.resx">
+      <DependentUpon>FrmGestionarAlquileres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

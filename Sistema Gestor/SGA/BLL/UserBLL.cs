@@ -96,22 +96,7 @@ namespace BLL
 
             SaveUser(user);
         }
-        /*
-        public void ModifyUser(User user)
-        {
-
-            var usuarioBD = userDAL.FindByNameLastname(user.Name,user.Lastname);
-
-            if (usuarioBD.Id!=null)
-            {
-                throw new ValidationException("El nombre de usuario ya esta registrado");
-            }
-            else {
-                SaveUser(user);
-            }
-
-        }
-        */
+       
         public void ResetUserPassword(string username, string actual, string newpass)
         {
             if (string.IsNullOrWhiteSpace(actual)) throw new ValidationException("Contraseña requerida");

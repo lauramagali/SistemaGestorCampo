@@ -87,21 +87,21 @@ namespace GUI
             this.crearModificarToolStripMenuItem,
             this.desbloquearToolStripMenuItem1});
             this.admnistrarUsuariosToolStripMenuItem.Name = "admnistrarUsuariosToolStripMenuItem";
-            this.admnistrarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
+            this.admnistrarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.admnistrarUsuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // crearModificarToolStripMenuItem
             // 
             this.crearModificarToolStripMenuItem.Name = "crearModificarToolStripMenuItem";
-            this.crearModificarToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
+            this.crearModificarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.crearModificarToolStripMenuItem.Tag = "mnu.usu.crearmod";
-            this.crearModificarToolStripMenuItem.Text = "Crear/Modificar";
+            this.crearModificarToolStripMenuItem.Text = "Crear";
             this.crearModificarToolStripMenuItem.Click += new System.EventHandler(this.crearModificarToolStripMenuItem_Click);
             // 
             // desbloquearToolStripMenuItem1
             // 
             this.desbloquearToolStripMenuItem1.Name = "desbloquearToolStripMenuItem1";
-            this.desbloquearToolStripMenuItem1.Size = new System.Drawing.Size(237, 34);
+            this.desbloquearToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.desbloquearToolStripMenuItem1.Tag = "submnu.usu.desbloquear";
             this.desbloquearToolStripMenuItem1.Text = "Desbloquear";
             this.desbloquearToolStripMenuItem1.Click += new System.EventHandler(this.desbloquearToolStripMenuItem1_Click);
@@ -112,20 +112,20 @@ namespace GUI
             this.CrearModificarUsuariosToolStripMenuItem,
             this.asignarToolStripMenuItem});
             this.admnistrarPermisosToolStripMenuItem.Name = "admnistrarPermisosToolStripMenuItem";
-            this.admnistrarPermisosToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
+            this.admnistrarPermisosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.admnistrarPermisosToolStripMenuItem.Text = "Perfiles";
             // 
             // CrearModificarUsuariosToolStripMenuItem
             // 
             this.CrearModificarUsuariosToolStripMenuItem.Name = "CrearModificarUsuariosToolStripMenuItem";
-            this.CrearModificarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
+            this.CrearModificarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.CrearModificarUsuariosToolStripMenuItem.Tag = "submnu.usu.crearmodifica";
             this.CrearModificarUsuariosToolStripMenuItem.Text = "Crear/Modificar";
             // 
             // asignarToolStripMenuItem
             // 
             this.asignarToolStripMenuItem.Name = "asignarToolStripMenuItem";
-            this.asignarToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
+            this.asignarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.asignarToolStripMenuItem.Tag = "submnu.per.asignar";
             this.asignarToolStripMenuItem.Text = "Asignar";
             // 
@@ -144,19 +144,19 @@ namespace GUI
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(213, 34);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             // 
             // serviciosToolStripMenuItem
             // 
             this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(213, 34);
+            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.serviciosToolStripMenuItem.Text = "Servicios";
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(213, 34);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // mnuUsuario
@@ -174,21 +174,21 @@ namespace GUI
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cerrarSesionToolStripMenuItem.Text = "Logout";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // cambiarClaveToolStripMenuItem
             // 
             this.cambiarClaveToolStripMenuItem.Name = "cambiarClaveToolStripMenuItem";
-            this.cambiarClaveToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.cambiarClaveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cambiarClaveToolStripMenuItem.Text = "Cambiar Clave";
             this.cambiarClaveToolStripMenuItem.Click += new System.EventHandler(this.cambiarClaveToolStripMenuItem_Click);
             // 
             // cambiarIdiomaToolStripMenuItem
             // 
             this.cambiarIdiomaToolStripMenuItem.Name = "cambiarIdiomaToolStripMenuItem";
-            this.cambiarIdiomaToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.cambiarIdiomaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cambiarIdiomaToolStripMenuItem.Text = "Cambiar Idioma";
             // 
             // alquilerToolStripMenuItem

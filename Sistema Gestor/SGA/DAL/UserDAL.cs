@@ -96,7 +96,7 @@ namespace DAL
                 connection.Open();
 
                 IList<User> lista = new Database(connection)
-                    .ExecuteQuery<User>("SELECT * FROM Usuarios WHERE FailCount=3;");
+                    .ExecuteQuery<User>("SELECT * FROM Usuarios WHERE FailCount=2;");
 
                 return lista;
             }

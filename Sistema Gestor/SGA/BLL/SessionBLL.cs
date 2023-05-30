@@ -42,7 +42,7 @@ namespace BLL
                 throw new BLL.ExceptionBLL("login.invaliduserpass", "Usuario y/o clave invalida");
             }
 
-            if (user.FailCount > 2)
+            if (user.FailCount >= 2)
             {
              
                 throw new BLL.ExceptionBLL("login.lockeduser", "Usuario bloqueado");

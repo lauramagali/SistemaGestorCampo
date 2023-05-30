@@ -35,7 +35,7 @@ namespace BLL
         public void SaveUserGrants(User usuario)
         {
             userDAL.SaveUserGrants(usuario);
-            BitacoraSingleton.GetInstance.Log($"Se guardaron los permisos del usuario {usuario.Username}");
+           
         }
 
         public User FindUser(string username)
@@ -124,7 +124,7 @@ namespace BLL
         public void LockUser(string username)
         {
             var user = FindUser(username);
-            user.FailCount = 3;
+            user.FailCount = 2;
 
             SaveUser(user);
         }

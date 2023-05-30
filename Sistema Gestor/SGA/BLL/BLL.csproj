@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractBLL.cs" />
-    <Compile Include="CustomerBLL.cs" />
     <Compile Include="ExceptionBLL.cs" />
     <Compile Include="GrantsBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

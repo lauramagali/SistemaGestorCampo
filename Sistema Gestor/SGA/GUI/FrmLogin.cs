@@ -36,6 +36,7 @@ namespace GUI
         {
             try
             {
+                this.lblError.Visible = false;
                 var usuario= sessionBLL.Login(this.txtUsername.Text, this.txtPassword.Text);
                 
                 this.Close();               

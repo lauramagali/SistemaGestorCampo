@@ -7,13 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BE.Permisos;
 using BLL;
-using SERVICIOS;
-using SERVICIOS.Bitacora;
-using SERVICIOS.Multilenguaje;
 using SERVICIOS.Session;
-using System.IO;
+
 
 namespace GUI
 {
@@ -77,27 +73,56 @@ namespace GUI
                 FormAutPass.MdiParent = this;
                 FormAutPass.Show();
             }
+            else
+            {
+                MessageBox.Show("No ha iniciado sesión.", "Cambiar Clave", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void crearModificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // if (SESSION.IsLogged())
-            //{
-                FrmRegistrarUsuario FormAutCrearUsu = new FrmRegistrarUsuario();
-                FormAutCrearUsu.MdiParent = this;
-                FormAutCrearUsu.Show();
-            //}
+             if (SESSION.IsLogged())
+            {
+
+                if (SESSION.User.Username == "Admin" || SESSION.User.Username == "admin") {
+                    FrmRegistrarUsuario FormAutCrearUsu = new FrmRegistrarUsuario();
+                    FormAutCrearUsu.MdiParent = this;
+                    FormAutCrearUsu.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Solo un administrador puede acceder.", "Administración", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("No ha iniciado sesión.", "Crear usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
         private void desbloquearToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //if (SESSION.IsLogged())
-            //{
-                FrmDesbloqueo FormAutDesBlo = new FrmDesbloqueo();
-                FormAutDesBlo.MdiParent = this;
-                FormAutDesBlo.Show();
-            //}
+            if (SESSION.IsLogged())
+            {
+                if (SESSION.User.Username == "Admin" || SESSION.User.Username == "admin")
+                {
+                    FrmDesbloqueo FormAutDesBlo = new FrmDesbloqueo();
+                    FormAutDesBlo.MdiParent = this;
+                    FormAutDesBlo.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Solo un administrador puede acceder.", "Administración", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No ha iniciado sesión.", "Crear usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -108,6 +133,69 @@ namespace GUI
                 FormAutGest.MdiParent = this;
                 FormAutGest.Show();
             }
+            else
+            {
+                MessageBox.Show("No ha iniciado sesión.", "Alquileres", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void cambiarIdiomaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Idiomas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Proveedores", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void serviciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Servicios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void admnistrarPermisosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Perfiles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void CrearModificarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Perfiles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void asignarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Perfiles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void organizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo para Diploma.", "Organizar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void reporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Reportes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sección en Desarrollo.", "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void admnistrarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,9 +8,10 @@ namespace BE.Permisos
 {
     public enum GrantType
     {
-        GestionarLugar,
-        GestionarServicio,
+        GestionarAlquiler,
+        GestionarProveedores,
         AdministradorSistema,
+        Recepcionista,
         Organizador
     }
 }

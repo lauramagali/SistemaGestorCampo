@@ -104,7 +104,7 @@ namespace BLL
 
             evt.AditionalServices.ForEach(service =>
             {
-                evt.Price += service.Price * service.Quantity;
+                evt.Price += service.Price;
             });
 
             //calculo el min pago de seña (50%) configurar esto con pantalla luego

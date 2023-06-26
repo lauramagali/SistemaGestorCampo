@@ -36,6 +36,7 @@ namespace GUI
             this.txtcuit = new System.Windows.Forms.Label();
             this.txtcliente = new System.Windows.Forms.Label();
             this.gbxevento = new System.Windows.Forms.GroupBox();
+            this.txtTipo = new System.Windows.Forms.Label();
             this.txtinvitados = new System.Windows.Forms.Label();
             this.txtfecha = new System.Windows.Forms.Label();
             this.txtevento = new System.Windows.Forms.Label();
@@ -44,7 +45,9 @@ namespace GUI
             this.txtCosto = new System.Windows.Forms.Label();
             this.txtsenia = new System.Windows.Forms.Label();
             this.btnPresupuesto = new System.Windows.Forms.Button();
-            this.txtTipo = new System.Windows.Forms.Label();
+            this.txtservicioAdicional = new System.Windows.Forms.Label();
+            this.txtcostoserv = new System.Windows.Forms.Label();
+            this.txtcostosalon = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.gbxcliente.SuspendLayout();
             this.gbxevento.SuspendLayout();
@@ -60,7 +63,7 @@ namespace GUI
             this.groupBox2.Controls.Add(this.btnPresupuesto);
             this.groupBox2.Location = new System.Drawing.Point(40, 28);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(720, 383);
+            this.groupBox2.Size = new System.Drawing.Size(824, 494);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Presupuesto:";
@@ -71,7 +74,7 @@ namespace GUI
             this.gbxcliente.Controls.Add(this.txtEmail);
             this.gbxcliente.Controls.Add(this.txtcuit);
             this.gbxcliente.Controls.Add(this.txtcliente);
-            this.gbxcliente.Location = new System.Drawing.Point(335, 25);
+            this.gbxcliente.Location = new System.Drawing.Point(456, 25);
             this.gbxcliente.Name = "gbxcliente";
             this.gbxcliente.Size = new System.Drawing.Size(344, 164);
             this.gbxcliente.TabIndex = 12;
@@ -116,25 +119,35 @@ namespace GUI
             // 
             // gbxevento
             // 
+            this.gbxevento.Controls.Add(this.txtservicioAdicional);
             this.gbxevento.Controls.Add(this.txtTipo);
             this.gbxevento.Controls.Add(this.txtinvitados);
             this.gbxevento.Controls.Add(this.txtfecha);
             this.gbxevento.Controls.Add(this.txtevento);
             this.gbxevento.Location = new System.Drawing.Point(21, 25);
             this.gbxevento.Name = "gbxevento";
-            this.gbxevento.Size = new System.Drawing.Size(266, 164);
+            this.gbxevento.Size = new System.Drawing.Size(401, 207);
             this.gbxevento.TabIndex = 11;
             this.gbxevento.TabStop = false;
             this.gbxevento.Text = "Evento";
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.AutoSize = true;
+            this.txtTipo.Location = new System.Drawing.Point(6, 130);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(47, 20);
+            this.txtTipo.TabIndex = 9;
+            this.txtTipo.Text = "Tipo: ";
             // 
             // txtinvitados
             // 
             this.txtinvitados.AutoSize = true;
             this.txtinvitados.Location = new System.Drawing.Point(6, 98);
             this.txtinvitados.Name = "txtinvitados";
-            this.txtinvitados.Size = new System.Drawing.Size(81, 20);
+            this.txtinvitados.Size = new System.Drawing.Size(149, 20);
             this.txtinvitados.TabIndex = 8;
-            this.txtinvitados.Text = "Invitados: ";
+            this.txtinvitados.Text = "Cantidad Invitados: ";
             // 
             // txtfecha
             // 
@@ -156,21 +169,23 @@ namespace GUI
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(549, 321);
+            this.button4.Location = new System.Drawing.Point(246, 259);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 36);
+            this.button4.Size = new System.Drawing.Size(176, 40);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Cancelar";
+            this.button4.Text = "Volver";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtcostosalon);
+            this.groupBox3.Controls.Add(this.txtcostoserv);
             this.groupBox3.Controls.Add(this.txtCosto);
             this.groupBox3.Controls.Add(this.txtsenia);
-            this.groupBox3.Location = new System.Drawing.Point(21, 265);
+            this.groupBox3.Location = new System.Drawing.Point(21, 321);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(332, 97);
+            this.groupBox3.Size = new System.Drawing.Size(779, 151);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales:";
@@ -178,24 +193,24 @@ namespace GUI
             // txtCosto
             // 
             this.txtCosto.AutoSize = true;
-            this.txtCosto.Location = new System.Drawing.Point(42, 32);
+            this.txtCosto.Location = new System.Drawing.Point(461, 37);
             this.txtCosto.Name = "txtCosto";
-            this.txtCosto.Size = new System.Drawing.Size(98, 20);
+            this.txtCosto.Size = new System.Drawing.Size(152, 20);
             this.txtCosto.TabIndex = 2;
-            this.txtCosto.Text = "Costo Total: ";
+            this.txtCosto.Text = "Costo Total Evento: ";
             // 
             // txtsenia
             // 
             this.txtsenia.AutoSize = true;
-            this.txtsenia.Location = new System.Drawing.Point(42, 64);
+            this.txtsenia.Location = new System.Drawing.Point(461, 78);
             this.txtsenia.Name = "txtsenia";
-            this.txtsenia.Size = new System.Drawing.Size(55, 20);
+            this.txtsenia.Size = new System.Drawing.Size(109, 20);
             this.txtsenia.TabIndex = 1;
-            this.txtsenia.Text = "Seña: ";
+            this.txtsenia.Text = "Seña Evento: ";
             // 
             // btnPresupuesto
             // 
-            this.btnPresupuesto.Location = new System.Drawing.Point(21, 207);
+            this.btnPresupuesto.Location = new System.Drawing.Point(21, 259);
             this.btnPresupuesto.Name = "btnPresupuesto";
             this.btnPresupuesto.Size = new System.Drawing.Size(190, 40);
             this.btnPresupuesto.TabIndex = 0;
@@ -203,20 +218,38 @@ namespace GUI
             this.btnPresupuesto.UseVisualStyleBackColor = true;
             this.btnPresupuesto.Click += new System.EventHandler(this.button2_Click);
             // 
-            // txtTipo
+            // txtservicioAdicional
             // 
-            this.txtTipo.AutoSize = true;
-            this.txtTipo.Location = new System.Drawing.Point(6, 130);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(47, 20);
-            this.txtTipo.TabIndex = 9;
-            this.txtTipo.Text = "Tipo: ";
+            this.txtservicioAdicional.AutoSize = true;
+            this.txtservicioAdicional.Location = new System.Drawing.Point(6, 163);
+            this.txtservicioAdicional.Name = "txtservicioAdicional";
+            this.txtservicioAdicional.Size = new System.Drawing.Size(165, 20);
+            this.txtservicioAdicional.TabIndex = 10;
+            this.txtservicioAdicional.Text = "Servicios Adicionales: ";
+            // 
+            // txtcostoserv
+            // 
+            this.txtcostoserv.AutoSize = true;
+            this.txtcostoserv.Location = new System.Drawing.Point(33, 37);
+            this.txtcostoserv.Name = "txtcostoserv";
+            this.txtcostoserv.Size = new System.Drawing.Size(211, 20);
+            this.txtcostoserv.TabIndex = 3;
+            this.txtcostoserv.Text = "Costo Servicios Adicionales: ";
+            // 
+            // txtcostosalon
+            // 
+            this.txtcostosalon.AutoSize = true;
+            this.txtcostosalon.Location = new System.Drawing.Point(33, 78);
+            this.txtcostosalon.Name = "txtcostosalon";
+            this.txtcostosalon.Size = new System.Drawing.Size(125, 20);
+            this.txtcostosalon.TabIndex = 4;
+            this.txtcostosalon.Text = "Costo del Salon:";
             // 
             // FrmPresupuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(919, 544);
             this.Controls.Add(this.groupBox2);
             this.Name = "FrmPresupuesto";
             this.Text = "FrmPresupuesto";
@@ -250,5 +283,8 @@ namespace GUI
         private System.Windows.Forms.Label txtfecha;
         private System.Windows.Forms.Label txtevento;
         private System.Windows.Forms.Label txtTipo;
+        private System.Windows.Forms.Label txtservicioAdicional;
+        private System.Windows.Forms.Label txtcostosalon;
+        private System.Windows.Forms.Label txtcostoserv;
     }
 }

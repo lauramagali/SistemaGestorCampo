@@ -32,6 +32,7 @@ namespace GUI
             txtfecha.Text = txtfecha.Text + evento.DateFrom;
             txtinvitados.Text = txtinvitados.Text + evento.GuessQuantity;
             txtTipo.Text = txtTipo.Text + evento.EventType;
+            txtservicioAdicional.Text = txtservicioAdicional.Text + evento.AditionalServices.Count;
 
             //cliente
             txtcliente.Text= txtcliente.Text+ evento.Customer.Name + evento.Customer.LastName;
@@ -39,10 +40,17 @@ namespace GUI
             txtEmail.Text = txtEmail.Text+ evento.Customer.Mail;
             txtTel.Text = txtTel.Text + evento.Customer.Phone;
 
-            //totales
-            txtCosto.Text = txtCosto.Text + "0 $";
-            txtsenia.Text = txtsenia.Text + "0 $";
 
+            //totales
+           
+            decimal Totalserv = 0;
+            evento.AditionalServices.ForEach(servicio =>{Totalserv += servicio.Price;});
+            txtcostoserv.Text = txtcostoserv.Text +  Totalserv;
+            decimal totalsal = 0;
+            if (EventType.CASAMIENTO.Equals(evento.EventType)) totalsal = 300000;
+            if (EventType.EMPRESARIAL.Equals(evento.EventType)) totalsal = 400000;
+            if (EventType.OTROS.Equals(evento.EventType)) totalsal = 290000;
+            txtcostosalon.Text = txtcostosalon.Text + totalsal;
 
         }
 

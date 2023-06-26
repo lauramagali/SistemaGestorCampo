@@ -24,7 +24,7 @@ namespace GUI
         public FrmServicios(Event evento)
         {
             InitializeComponent();
-
+            this.evento = evento;
             IList<Service> servicios = aditionalServiceBLL.FindAll();
 
             dgvServicios.SuspendLayout();
@@ -37,7 +37,7 @@ namespace GUI
 
                     dgvServicios.Rows[n].Cells[0].Value = servicio.Id;
                     dgvServicios.Rows[n].Cells[1].Value = servicio.Name;
-                    dgvServicios.Rows[n].Cells[2].Value = servicio.Price;
+                    dgvServicios.Rows[n].Cells[2].Value = servicio.ProviderPrice;
 
                 }
 
@@ -52,7 +52,7 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (dgvServicios.SelectedRows.Count == 1)
+            if (dgvServicios.SelectedRows.Count == 1 && qtyservicio.Value>0)
             {
                 string Nobreservicio = (string)dgvServicios.SelectedRows[0].Cells[1].Value;
                 Service servicioAgergar = aditionalServiceBLL.FindServicesByName(Nobreservicio)[0];
@@ -61,13 +61,14 @@ namespace GUI
 
                 dgvServiciosReserva.Rows[n].Cells[0].Value = servicioAgergar.Id;
                 dgvServiciosReserva.Rows[n].Cells[1].Value = servicioAgergar.Name;
-                dgvServiciosReserva.Rows[n].Cells[2].Value = servicioAgergar.Price;
+                dgvServiciosReserva.Rows[n].Cells[2].Value = servicioAgergar.ProviderPrice;
+                dgvServiciosReserva.Rows[n].Cells[3].Value = qtyservicio.Value;
 
-                dgvServiciosReserva.ResumeLayout();
+               dgvServiciosReserva.ResumeLayout();
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un servicio primero para agregarlo", "Gestionar Alquileres", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Debe seleccionar un servicio y su cantidad para poder agregarlo", "Gestionar Alquileres", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -89,32 +90,24 @@ namespace GUI
         {
             foreach (DataGridViewRow row in dgvServiciosReserva.Rows)
             {
-                AditionalService servicioad = new AditionalService();
-                servicioad.ServiceName = row.Cells["Precio"].Value.ToString();
+                Service servicio = new Service();
+                AditionalService adicional = new AditionalService();
+                servicio.Id = (int)row.Cells[0].Value;
+                servicio.Name = row.Cells[1].Value.ToString();
+                servicio.ProviderPrice = (decimal)row.Cells[2].Value;
+                //adicional.EventId = (int)evento.Id;
+                adicional.ServiceId = (int)servicio.Id;
+                adicional.Service = servicio;
+                var qty= (decimal)row.Cells[3].Value;
+                adicional.Price = servicio.ProviderPrice * qty; 
+                adicional.Quantity= qty ;
+                adicional.Status = AditionalServiceStatus.PENDING;
+                adicional.CreatedAt = DateTime.Now;
 
-                MessageBox.Show(row.Cells["Pago"].Value.ToString());
-                MessageBox.Show(row.Cells["Cantidad"].Value.ToString());
-                MessageBox.Show(row.Cells["Observaciones"].Value.ToString());
+                this.evento.AditionalServices.Add(adicional);               
             }
-
-            foreach (Event dgvReservas in events)
-            {
-                int n = dgvReservas.Rows.Add();
-
-
-
-                dgvReservas.Rows[n].Cells[0].Value = eventito.Id;
-                dgvReservas.Rows[n].Cells[1].Value = eventito.Title;
-                dgvReservas.Rows[n].Cells[2].Value = eventito.DateFrom;
-                dgvReservas.Rows[n].Cells[3].Value = eventito.GuessQuantity;
-                dgvReservas.Rows[n].Cells[4].Value = eventito.EventType;
-                dgvReservas.Rows[n].Cells[5].Value = eventito.Price;
-                dgvReservas.Rows[n].Cells[6].Value = eventito.MinPrice;
-                dgvReservas.Rows[n].Cells[7].Value = eventito.Status;
-
-            }
-
-            dgvReservas.ResumeLayout();
+            this.Close();
+         
         }
     }
 }

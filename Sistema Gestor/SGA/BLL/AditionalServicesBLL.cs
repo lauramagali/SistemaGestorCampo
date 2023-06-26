@@ -46,33 +46,7 @@ namespace BLL
            
         }
 
-        public List<string> Confirm(AditionalService aditionalService, decimal realCost)
-        {
+       
 
-            var errors = new List<string>();
-            if (aditionalService.CalculedPrice < realCost * aditionalService.Quantity)
-            {
-                errors.Add("Se supero el monto abonado por el cliente.");
-            }
-
-
-            if (errors.Count == 0)
-            {
-                aditionalService.Status = AditionalServiceStatus.CONFIRMED;
-                aditionalService.Cost = realCost * aditionalService.Quantity;
-                aditionalServiceDAL.SaveAditionalService(aditionalService);
-            }
-
-            return errors;
-
-        }
-
-        public void CancelProvider(AditionalService aditionalService, decimal realCost)
-        {
-            aditionalService.Status = AditionalServiceStatus.CANCELED;
-            aditionalService.Cost = realCost * aditionalService.Quantity;
-            aditionalServiceDAL.SaveAditionalService(aditionalService);
-           
-        }
     }
 }

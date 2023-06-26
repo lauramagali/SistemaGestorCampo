@@ -12,21 +12,10 @@ namespace BE
 
         public decimal ProviderPrice { get; set; }
 
-        public decimal Fee { get; set; }
-
         public bool Status { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
 
-
-        public decimal Price
-        {
-            get
-            {
-                return ProviderPrice + ProviderPrice * (Fee / 100);
-            }
-        }
     }
 }

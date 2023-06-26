@@ -64,7 +64,7 @@ namespace DAL
             using (var connection = this.GetSqlConnectionOpen())
             {
                 var db = new Database(connection);
-                var sql = "SELECT * FROM [Services] ";
+                var sql = "SELECT [Id],[Name],[ProviderPrice],[Status],[CreatedAt] FROM [Services] ";
                 var services = db.ExecuteQuery<Service>(sql);
 
                 return services;
@@ -88,12 +88,10 @@ namespace DAL
                 }
 
                 db.AddParameter("@Name", service.Name)
-                    .AddParameter("@ProviderPrice", service.ProviderPrice)
-                    .AddParameter("@Fee", service.Fee)
+                    .AddParameter("@Price", service.ProviderPrice)
                     .AddParameter("@Status", service.Status)
 
                     ;
-
 
                 db.ExecuteNonQuery("sp_Services_Upsert", true);
                 service.Id = db.ReadOutputParameter<Int32>("@Id");
@@ -118,7 +116,7 @@ namespace DAL
             db.AddParameter("@Quantity", aditionalService.Quantity);
             db.AddParameter("@Price", aditionalService.Price);
             db.AddParameter("@Status", aditionalService.Status);
-            db.AddParameter("@Description", aditionalService.Description);
+     
 
             db.ExecuteNonQuery("sp_AditionalService_Upsert", true);
 

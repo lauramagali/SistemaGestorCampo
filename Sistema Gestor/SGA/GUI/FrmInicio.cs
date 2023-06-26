@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using SERVICIOS.Session;
+using BE.Permisos;
 
 
 namespace GUI
@@ -83,8 +84,8 @@ namespace GUI
         {
              if (SESSION.IsLogged())
             {
-
-                if (SESSION.User.Username == "Admin" || SESSION.User.Username == "admin") {
+                bool esAdmin = SESSION.HasGrant(GrantType.Administrador);
+                if (esAdmin) {
                     FrmRegistrarUsuario FormAutCrearUsu = new FrmRegistrarUsuario();
                     FormAutCrearUsu.MdiParent = this;
                     FormAutCrearUsu.Show();
@@ -130,7 +131,7 @@ namespace GUI
             if (SESSION.IsLogged()) {
 
                 FrmGestionarAlquileres FormAutGest = new FrmGestionarAlquileres();
-                FormAutGest.MdiParent = this;
+               // FormAutGest.MdiParent = this;
                 FormAutGest.Show();
             }
             else

@@ -30,6 +30,8 @@ namespace GUI
         private void InitializeComponent()
         {
             this.gbxUsuario = new System.Windows.Forms.GroupBox();
+            this.txtclaverepetir = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
@@ -41,13 +43,19 @@ namespace GUI
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblClave = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtclaverepetir = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.Label();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbxUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxUsuario
             // 
+            this.gbxUsuario.Controls.Add(this.textBox1);
+            this.gbxUsuario.Controls.Add(this.txtTel);
+            this.gbxUsuario.Controls.Add(this.txtEmail);
+            this.gbxUsuario.Controls.Add(this.txtTelefono);
             this.gbxUsuario.Controls.Add(this.txtclaverepetir);
             this.gbxUsuario.Controls.Add(this.label1);
             this.gbxUsuario.Controls.Add(this.lblError);
@@ -63,11 +71,27 @@ namespace GUI
             this.gbxUsuario.Controls.Add(this.lblUsername);
             this.gbxUsuario.Location = new System.Drawing.Point(38, 48);
             this.gbxUsuario.Name = "gbxUsuario";
-            this.gbxUsuario.Size = new System.Drawing.Size(563, 407);
+            this.gbxUsuario.Size = new System.Drawing.Size(564, 462);
             this.gbxUsuario.TabIndex = 0;
             this.gbxUsuario.TabStop = false;
             this.gbxUsuario.Tag = "user";
             this.gbxUsuario.Text = "Usuario";
+            // 
+            // txtclaverepetir
+            // 
+            this.txtclaverepetir.Location = new System.Drawing.Point(195, 345);
+            this.txtclaverepetir.Name = "txtclaverepetir";
+            this.txtclaverepetir.Size = new System.Drawing.Size(331, 26);
+            this.txtclaverepetir.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 348);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Repetir Contraseña:";
             // 
             // lblError
             // 
@@ -80,7 +104,7 @@ namespace GUI
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(188, 333);
+            this.btnCancel.Location = new System.Drawing.Point(188, 402);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(141, 37);
             this.btnCancel.TabIndex = 9;
@@ -91,7 +115,7 @@ namespace GUI
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(385, 333);
+            this.btnRegistrar.Location = new System.Drawing.Point(385, 402);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(141, 37);
             this.btnRegistrar.TabIndex = 8;
@@ -102,16 +126,16 @@ namespace GUI
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(195, 205);
+            this.txtClave.Location = new System.Drawing.Point(195, 297);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(331, 26);
             this.txtClave.TabIndex = 7;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(188, 152);
+            this.txtUsername.Location = new System.Drawing.Point(195, 244);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(338, 26);
+            this.txtUsername.Size = new System.Drawing.Size(331, 26);
             this.txtUsername.TabIndex = 6;
             // 
             // txtLastname
@@ -149,7 +173,7 @@ namespace GUI
             // lblClave
             // 
             this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(32, 208);
+            this.lblClave.Location = new System.Drawing.Point(32, 300);
             this.lblClave.Name = "lblClave";
             this.lblClave.Size = new System.Drawing.Size(96, 20);
             this.lblClave.TabIndex = 1;
@@ -158,33 +182,49 @@ namespace GUI
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(32, 155);
+            this.lblUsername.Location = new System.Drawing.Point(32, 247);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(150, 20);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Nombre de Usuario:";
             // 
-            // label1
+            // txtTelefono
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 256);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Repetir Contraseña:";
+            this.txtTelefono.AutoSize = true;
+            this.txtTelefono.Location = new System.Drawing.Point(32, 150);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(75, 20);
+            this.txtTelefono.TabIndex = 12;
+            this.txtTelefono.Text = "Telefono:";
             // 
-            // txtclaverepetir
+            // txtEmail
             // 
-            this.txtclaverepetir.Location = new System.Drawing.Point(195, 253);
-            this.txtclaverepetir.Name = "txtclaverepetir";
-            this.txtclaverepetir.Size = new System.Drawing.Size(331, 26);
-            this.txtclaverepetir.TabIndex = 11;
+            this.txtEmail.AutoSize = true;
+            this.txtEmail.Location = new System.Drawing.Point(32, 197);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(57, 20);
+            this.txtEmail.TabIndex = 13;
+            this.txtEmail.Text = "E-Mail:";
+            // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(117, 143);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(409, 26);
+            this.txtTel.TabIndex = 14;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(117, 191);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(409, 26);
+            this.textBox1.TabIndex = 15;
             // 
             // FrmRegistrarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 486);
+            this.ClientSize = new System.Drawing.Size(649, 549);
             this.Controls.Add(this.gbxUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmRegistrarUsuario";
@@ -212,5 +252,9 @@ namespace GUI
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.TextBox txtclaverepetir;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtTelefono;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.Label txtEmail;
     }
 }

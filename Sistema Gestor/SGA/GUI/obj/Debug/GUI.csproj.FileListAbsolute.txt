@@ -19,7 +19,6 @@ C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmLogin.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmChangePassword.resources
-C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmCrearModificarUsuario.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmRegistrarUsuario.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmDesbloqueo.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmCargarReserva.resources
@@ -28,3 +27,5 @@ C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmGestionarAlquileres.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmPagos.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmPresupuesto.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmModificarUsuario.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmGestionarUsuarios.resources

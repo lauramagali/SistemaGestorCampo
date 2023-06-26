@@ -13,7 +13,7 @@ namespace DAL
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "NICETO";
-            builder.InitialCatalog = "sgas";
+            builder.InitialCatalog = "sge";
             builder.IntegratedSecurity = true;
            
             return builder.ConnectionString;

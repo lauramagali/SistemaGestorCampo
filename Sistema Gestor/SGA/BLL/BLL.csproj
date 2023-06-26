@@ -42,8 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractBLL.cs" />
+    <Compile Include="AditionalServicesBLL.cs" />
+    <Compile Include="CustomerBLL.cs" />
+    <Compile Include="EventBLL.cs" />
     <Compile Include="ExceptionBLL.cs" />
     <Compile Include="GrantsBLL.cs" />
+    <Compile Include="PaymentBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBLL.cs" />
     <Compile Include="UserBLL.cs" />

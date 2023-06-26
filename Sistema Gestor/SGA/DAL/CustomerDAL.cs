@@ -34,6 +34,25 @@ namespace DAL
                 return null;
             }
         }
+        public Customer FindById(int id)
+        {
+            IList<Customer> customers;
+            using (var connection = this.GetSqlConnectionOpen())
+            {
+                var db = new Database(connection);
+                db.AddParameter("@Id", id);
+                customers = db.ExecuteQuery<Customer>("select * from Customers WHERE Id like @Id ", false);
+            }
+
+            if (customers.Count > 0)
+            {
+                return customers[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         public Customer FindByEmail(string mail)
         {

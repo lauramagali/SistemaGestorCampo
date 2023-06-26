@@ -18,13 +18,13 @@ using System.IO;
 
 namespace GUI
 {
-    public partial class FrmCrearModificarUsuario : Form
+    public partial class FrmModificarUsuario : Form
     {
         private UserBLL usuarioBLL = UserBLL.Instance;
         private User editable;
         private readonly SessionHandler SESSION = SessionHandler.GetInstance;
 
-        public FrmCrearModificarUsuario()
+        public FrmModificarUsuario()
         {
             InitializeComponent();
         }
@@ -57,11 +57,15 @@ namespace GUI
                     this.editable = (User)cbxUsuario.SelectedItem;
                     this.editable.Lastname = txtLastname.Text;
                     this.editable.Name = txtName.Text;
+                    this.editable.Phone = txtTeleditable.Text;
+                    this.editable.Mail = txtemaileditable.Text;
                    // usuarioBLL.ModifyUser(this.editable);
                     usuarioBLL.SaveUser(this.editable); //falta termnar la validacion de nombre y apellido
                     setFormControlsUser(false);
                     txtName.Text = "";
                     txtLastname.Text = "";
+                    txtemaileditable.Text = "";
+                    txtTeleditable.Text = "";
                     MessageBox.Show("Usuario Modificado Correctamente", "Modificar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
@@ -93,6 +97,8 @@ namespace GUI
                 setFormControlsUser(true);
                 txtName.Text = this.editable.Name;
                 txtLastname.Text =this.editable.Lastname;
+                txtEmail.Text = this.editable.Mail;
+                txtTeleditable.Text = this.editable.Phone;
             }
 
          }

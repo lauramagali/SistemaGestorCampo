@@ -36,8 +36,8 @@ namespace GUI
             }
             else {
                 var usuario = new User(this.txtUsername.Text, this.txtClave.Text);
-                usuario.Phone = "";
-                usuario.Mail = "";
+                usuario.Phone =txtTel.Text;
+                usuario.Mail = txtEmail.Text;
                 usuario.Name = txtName.Text;
                 usuario.Lastname = txtLastname.Text;
 

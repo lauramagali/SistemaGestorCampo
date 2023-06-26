@@ -52,17 +52,23 @@
     <Compile Include="FrmCargarReserva.Designer.cs">
       <DependentUpon>FrmCargarReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCrearModificarUsuario.cs">
+    <Compile Include="FrmModificarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCrearModificarUsuario.Designer.cs">
-      <DependentUpon>FrmCrearModificarUsuario.cs</DependentUpon>
+    <Compile Include="FrmModificarUsuario.Designer.cs">
+      <DependentUpon>FrmModificarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDesbloqueo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDesbloqueo.Designer.cs">
       <DependentUpon>FrmDesbloqueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionarUsuarios.Designer.cs">
+      <DependentUpon>FrmGestionarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPagos.cs">
       <SubType>Form</SubType>
@@ -123,11 +129,14 @@
     <EmbeddedResource Include="FrmCargarReserva.resx">
       <DependentUpon>FrmCargarReserva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCrearModificarUsuario.resx">
-      <DependentUpon>FrmCrearModificarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="FrmModificarUsuario.resx">
+      <DependentUpon>FrmModificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDesbloqueo.resx">
       <DependentUpon>FrmDesbloqueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionarUsuarios.resx">
+      <DependentUpon>FrmGestionarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPagos.resx">
       <DependentUpon>FrmPagos.cs</DependentUpon>

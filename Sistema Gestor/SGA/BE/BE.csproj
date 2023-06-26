@@ -51,6 +51,7 @@
     <Compile Include="Event.cs" />
     <Compile Include="EventStatus.cs" />
     <Compile Include="EventType.cs" />
+    <Compile Include="Idioma.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Permisos\AbstractComponent.cs" />
     <Compile Include="Permisos\Family.cs" />

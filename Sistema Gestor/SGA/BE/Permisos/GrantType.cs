@@ -11,10 +11,9 @@ namespace BE.Permisos
         GestionarAlquiler,
         GestionarProveedores,
         AdministradorSistema,
-        GestionarServicio,
+        GestionarServicios,
         Administrador,
         Recepcionista,
-        Organizador,
-        GestionarLugar
+        Organizador
     }
 }

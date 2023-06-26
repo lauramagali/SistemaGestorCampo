@@ -50,6 +50,7 @@ namespace GUI
             this.organizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuInicio.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@ namespace GUI
             this.ayudaToolStripMenuItem});
             this.menuInicio.Location = new System.Drawing.Point(0, 0);
             this.menuInicio.Name = "menuInicio";
-            this.menuInicio.Size = new System.Drawing.Size(886, 36);
+            this.menuInicio.Size = new System.Drawing.Size(886, 33);
             this.menuInicio.TabIndex = 0;
             this.menuInicio.Text = "menuStrip1";
             // 
@@ -75,9 +76,10 @@ namespace GUI
             // 
             this.administradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.admnistrarUsuariosToolStripMenuItem,
-            this.admnistrarPermisosToolStripMenuItem});
+            this.admnistrarPermisosToolStripMenuItem,
+            this.idiomasToolStripMenuItem});
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(87, 32);
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(87, 29);
             this.administradorToolStripMenuItem.Text = "ADMIN";
             // 
             // admnistrarUsuariosToolStripMenuItem
@@ -138,7 +140,7 @@ namespace GUI
             this.proveedoresToolStripMenuItem,
             this.serviciosToolStripMenuItem});
             this.maestroToolStripMenuItem.Name = "maestroToolStripMenuItem";
-            this.maestroToolStripMenuItem.Size = new System.Drawing.Size(119, 32);
+            this.maestroToolStripMenuItem.Size = new System.Drawing.Size(119, 29);
             this.maestroToolStripMenuItem.Tag = "mnu.maestros";
             this.maestroToolStripMenuItem.Text = "MAESTROS";
             this.maestroToolStripMenuItem.ToolTipText = "Maestros";
@@ -164,7 +166,7 @@ namespace GUI
             this.cambiarClaveToolStripMenuItem,
             this.cambiarIdiomaToolStripMenuItem});
             this.mnuUsuario.Name = "mnuUsuario";
-            this.mnuUsuario.Size = new System.Drawing.Size(104, 32);
+            this.mnuUsuario.Size = new System.Drawing.Size(104, 29);
             this.mnuUsuario.Tag = "mnu.usuario";
             this.mnuUsuario.Text = "USUARIO";
             this.mnuUsuario.ToolTipText = "Usuario";
@@ -195,7 +197,7 @@ namespace GUI
             this.alquilerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reservasToolStripMenuItem});
             this.alquilerToolStripMenuItem.Name = "alquilerToolStripMenuItem";
-            this.alquilerToolStripMenuItem.Size = new System.Drawing.Size(126, 32);
+            this.alquilerToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
             this.alquilerToolStripMenuItem.Tag = "mnu.alquiler";
             this.alquilerToolStripMenuItem.Text = "ALQUILERES";
             // 
@@ -209,7 +211,7 @@ namespace GUI
             // organizarToolStripMenuItem
             // 
             this.organizarToolStripMenuItem.Name = "organizarToolStripMenuItem";
-            this.organizarToolStripMenuItem.Size = new System.Drawing.Size(128, 32);
+            this.organizarToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
             this.organizarToolStripMenuItem.Tag = "mnu.organizar";
             this.organizarToolStripMenuItem.Text = "ORGANIZAR";
             this.organizarToolStripMenuItem.ToolTipText = "Organizar";
@@ -218,7 +220,7 @@ namespace GUI
             // reporteToolStripMenuItem
             // 
             this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
-            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(110, 32);
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(110, 29);
             this.reporteToolStripMenuItem.Tag = "mnu.reportes";
             this.reporteToolStripMenuItem.Text = "REPORTES";
             this.reporteToolStripMenuItem.ToolTipText = "Reportes";
@@ -227,11 +229,18 @@ namespace GUI
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(86, 32);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(86, 29);
             this.ayudaToolStripMenuItem.Tag = "mnu.ayuda";
             this.ayudaToolStripMenuItem.Text = "AYUDA";
             this.ayudaToolStripMenuItem.ToolTipText = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
+            // 
+            // idiomasToolStripMenuItem
+            // 
+            this.idiomasToolStripMenuItem.Name = "idiomasToolStripMenuItem";
+            this.idiomasToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.idiomasToolStripMenuItem.Text = "Idiomas";
+            this.idiomasToolStripMenuItem.Click += new System.EventHandler(this.idiomasToolStripMenuItem_Click);
             // 
             // FrmInicio
             // 
@@ -275,6 +284,7 @@ namespace GUI
         private System.Windows.Forms.ToolStripMenuItem desbloquearToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem CrearModificarUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
     }
 }
 

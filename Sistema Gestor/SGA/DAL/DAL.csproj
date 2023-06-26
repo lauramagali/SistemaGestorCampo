@@ -73,6 +73,7 @@
     <Compile Include="CustomerDAL.cs" />
     <Compile Include="EventDAL.cs" />
     <Compile Include="GrantsDAL.cs" />
+    <Compile Include="MultiLangDAL.cs" />
     <Compile Include="PaymentDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDAL.cs" />

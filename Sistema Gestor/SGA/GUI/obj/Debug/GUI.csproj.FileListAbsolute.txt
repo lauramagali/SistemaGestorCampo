@@ -29,3 +29,5 @@ C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmPresupuesto.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmModificarUsuario.resources
 C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmGestionarUsuarios.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmCambiarIdioma.resources
+C:\Users\magal\OneDrive\Documents\UAI\CAMPO 2023\SISTEMA\Sistema Gestor\SGA\GUI\obj\Debug\GUI.FrmGestionarIdioma.resources

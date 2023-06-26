@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCambiarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiarIdioma.Designer.cs">
+      <DependentUpon>FrmCambiarIdioma.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCargarReserva.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCargarReserva.Designer.cs">
       <DependentUpon>FrmCargarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionarIdioma.Designer.cs">
+      <DependentUpon>FrmGestionarIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionarPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionarPermisos.Designer.cs">
+      <DependentUpon>FrmGestionarPermisos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmModificarUsuario.cs">
       <SubType>Form</SubType>
@@ -126,8 +144,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCambiarIdioma.resx">
+      <DependentUpon>FrmCambiarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCargarReserva.resx">
       <DependentUpon>FrmCargarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionarIdioma.resx">
+      <DependentUpon>FrmGestionarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionarPermisos.resx">
+      <DependentUpon>FrmGestionarPermisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarUsuario.resx">
       <DependentUpon>FrmModificarUsuario.cs</DependentUpon>

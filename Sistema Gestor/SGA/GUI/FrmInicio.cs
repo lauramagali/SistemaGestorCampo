@@ -166,7 +166,16 @@ namespace GUI
 
         private void CrearModificarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sección en Desarrollo.", "Perfiles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (SESSION.IsLogged())
+            {
+                FrmGestionarPermisos FormPerGest = new FrmGestionarPermisos();
+                
+                FormPerGest.Show();
+            }
+            else
+            {
+                MessageBox.Show("No ha iniciado sesión.", "Permisos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
@@ -197,6 +206,21 @@ namespace GUI
         private void admnistrarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void idiomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SESSION.IsLogged())
+            {
+
+                FrmGestionarIdioma FormGestIdi = new FrmGestionarIdioma();
+                // FormAutGest.MdiParent = this;
+                FormGestIdi.Show();
+            }
+            else
+            {
+                MessageBox.Show("No ha iniciado sesión.", "Idiomas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

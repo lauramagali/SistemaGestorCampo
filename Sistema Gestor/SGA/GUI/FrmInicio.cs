@@ -142,8 +142,11 @@ namespace GUI
 
         private void cambiarIdiomaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sección en Desarrollo.", "Idiomas", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            
+                FrmCambiarIdioma FormIdioma = new FrmCambiarIdioma();
+                
+                FormIdioma.Show();
+           
         }
 
         private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)

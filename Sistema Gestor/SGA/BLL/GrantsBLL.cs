@@ -19,7 +19,24 @@ namespace BLL
         {
 
         }
+        public bool Existe(AbstractComponent c, System.Guid id)
+        {
+            bool existe = false;
 
+            if (c.Id.Equals(id))
+                existe = true;
+            else
+
+                foreach (var item in c.Childs)
+                {
+
+                    existe = Existe(item, id);
+                    if (existe) return true;
+                }
+
+            return existe;
+
+        }
         public static GrantsBLL Instance => instance;
 
         private GrantsDAL permisosDAL = GrantsDAL.Instance;

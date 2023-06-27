@@ -28,10 +28,8 @@ namespace GUI
         {
             WinformUtils.TraducirControl(this);
         }
-
-        private void FrmCambiarIdioma_Load(object sender, EventArgs e)
+        private void FrmCambiarIdioma_Load_1(object sender, EventArgs e)
         {
-
             cbxIdiomas.DisplayMember = "Descripcion";
             cbxIdiomas.DataSource = multiIdiomaBLL.GetAllIdiomas();
             cbxIdiomas.AutoCompleteMode = AutoCompleteMode.Suggest;
@@ -42,12 +40,7 @@ namespace GUI
             TraducirForm();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnCambiarIdioma_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (cbxIdiomas.SelectedItem != null)
             {
@@ -56,15 +49,10 @@ namespace GUI
             }
         }
 
-        private void btnGestionar_Click(object sender, EventArgs e)
+        private void btncancelar_Click_1(object sender, EventArgs e)
         {
-            new FrmCambiarIdioma().Show();
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

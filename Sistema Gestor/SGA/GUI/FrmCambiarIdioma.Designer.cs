@@ -58,6 +58,7 @@ namespace GUI
             this.btncancelar.TabIndex = 3;
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click_1);
             // 
             // btnguardar
             // 
@@ -94,6 +95,7 @@ namespace GUI
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCambiarIdioma";
             this.Text = "FrmCambiarIdioma";
+            this.Load += new System.EventHandler(this.FrmCambiarIdioma_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
